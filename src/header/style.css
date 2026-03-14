@@ -237,40 +237,25 @@
     display: inline-block;
 }
 
-/* --- Sidebar Navigation (DIPERKETAT) --- */
 .site__navigation {
     height: 100% !important;
-    /* Paksa posisi ke kiri */
-    left: 0 !important;
-    right: auto !important; 
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-width: 450px; 
+    left: 0 !important;   /* Paksa posisi di kiri */
+    right: auto !important; /* Matikan posisi kanan */
+    width: 100% !important;
+    max-width: 450px !important; 
+    position: fixed !important;
     visibility: hidden;
     z-index: 999;
-    transition: visibility 0.5s;
-}
-
-.menu__opend {
-    visibility: visible !important;
 }
 
 .bg__menu {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
     background-color: var(--primary-color);
-    /* Paksa arah geser horizontal dari kiri */
+    /* Paksa geser horizontal dari kiri ke kanan */
     transform: translateX(-100%) !important; 
     transition: .5s cubic-bezier(0.77, 0.2, 0.05, 1) all;
 }
 
 .menu__opend .bg__menu {
-    /* Muncul ke posisi normal */
     transform: translateX(0) !important;
 }
 
