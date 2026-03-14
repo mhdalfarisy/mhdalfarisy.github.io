@@ -237,10 +237,12 @@
     display: inline-block;
 }
 
-/* --- Sidebar Navigation --- */
+/* --- Sidebar Navigation (DIPERKETAT) --- */
 .site__navigation {
-    height: 100%;
-    left: 0;
+    height: 100% !important;
+    /* Paksa posisi ke kiri */
+    left: 0 !important;
+    right: auto !important; 
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -262,12 +264,14 @@
     width: 100%;
     height: 100%;
     background-color: var(--primary-color);
-    transform: translateX(-100%); 
+    /* Paksa arah geser horizontal dari kiri */
+    transform: translateX(-100%) !important; 
     transition: .5s cubic-bezier(0.77, 0.2, 0.05, 1) all;
 }
 
 .menu__opend .bg__menu {
-    transform: translateX(0);
+    /* Muncul ke posisi normal */
+    transform: translateX(0) !important;
 }
 
 .the_menu {
