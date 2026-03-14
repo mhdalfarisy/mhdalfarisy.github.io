@@ -37,7 +37,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Work Timeline</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -45,9 +45,24 @@ export const About = () => {
                 {worktimeline.map((data, i) => {
                   return (
                     <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
+                      <th scope="row" style={{ width: "25%", verticalAlign: "top", paddingTop: "15px" }}>
+                        {data.jobtitle}
+                      </th>
+                      <td style={{ verticalAlign: "top", paddingTop: "15px" }}>
+                        <div style={{ fontWeight: "bold", fontSize: "1.1rem" }}>{data.where || data.company}</div>
+                        <div style={{ fontSize: "0.85rem", color: "#888", marginBottom: "10px" }}>{data.date || data.period}</div>
+                        
+                        {/* Menampilkan Deskripsi/Responsibilities */}
+                        {data.description && (
+                          <ul style={{ paddingLeft: "20px", marginTop: "10px", listStyleType: "disc" }}>
+                            {data.description.map((item, index) => (
+                              <li key={index} style={{ marginBottom: "5px", fontSize: "0.95rem" }}>
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </td>
                     </tr>
                   );
                 })}
@@ -80,8 +95,8 @@ export const About = () => {
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+          <Col lg="5">
+            <h3 className="color_sec py-4">Services</h3>
           </Col>
           <Col lg="7">
             {services.map((data, i) => {
