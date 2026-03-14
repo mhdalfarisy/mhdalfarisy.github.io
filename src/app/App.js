@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
-  HashRouter as Router, // Diubah dari BrowserRouter ke HashRouter
+  HashRouter as Router, 
   useLocation,
 } from "react-router-dom";
 import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
-import AnimatedCursor from "../hooks/AnimatedCursor";
+// AnimatedCursor tidak diimport lagi agar kursor menjadi panah default
+// import AnimatedCursor from "../hooks/AnimatedCursor"; 
 import "./App.css";
 
 function _ScrollToTop(props) {
@@ -21,18 +22,10 @@ const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
   return (
-    // Basename biasanya tidak diperlukan lagi saat menggunakan HashRouter di GitHub Pages
     <Router>
-      <div className="cursor__dot">
-        <AnimatedCursor
-          innerSize={15}
-          outerSize={15}
-          color="255, 255 ,255"
-          outerAlpha={0.4}
-          innerScale={0.7}
-          outerScale={5}
-        />
-      </div>
+      {/* Bagian <AnimatedCursor /> telah dihapus 
+          agar kursor kembali ke bentuk panah standar.
+      */}
       <ScrollToTop>
         <Headermain />
         <AppRoutes />
