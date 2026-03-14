@@ -41,50 +41,45 @@ const worktimeline = [
         period: "Dec 2022 - Present",
         duration: "3 yrs 4 mos",
         details: [
-            "Design, develop, and maintain interactive Power BI dashboards and reports.",
-            "Collect, cleanse, and validate data from various sources including Data Warehouses and SQL databases.",
-            "Build and optimize data models using DAX calculations for complex analytical needs.",
-            "Collaborate with IT and Programmer teams to optimize ETL and data retrieval processes.",
-            "Automate reporting solutions to minimize manual processes and ensure data security."
+            "Design, develop, and maintain interactive Power BI dashboards using DAX.",
+            "Optimize ETL processes and data models for faster retrieval.",
+            "Collaborate with IT and Programmer teams for data warehouse integration."
         ]
     },
     {
         jobtitle: "Data Analyst and Visualization (Seasonal)",
         company: "PT Adhi Commuter Properti Tbk",
-        location: "Bogor, West Java, Indonesia",
+        location: "Bogor, West Java",
         period: "Aug 2022 - Oct 2022",
         duration: "3 mos",
         details: [
-            "Cleaned and analyzed consumer and sales databases for marketing insights.",
-            "Developed supervised and unsupervised Machine Learning models for business categorization.",
-            "Analyzed digital marketing campaign data (Google Ads, FB Ads, Instagram Ads).",
-            "Visualized insights using Tableau and presented findings to Project Directors and Managers."
+            "Built Machine Learning models (Supervised & Unsupervised) for consumer analysis.",
+            "Visualized sales and digital marketing insights using Tableau.",
+            "Presented data-driven strategies to Project Directors and Marketing Managers."
         ]
     },
     {
         jobtitle: "Operations and Accounting",
-        company: "Nectico (In Collaboration with TaniHub)",
+        company: "Nectico (TaniHub Collaboration)",
         location: "South Jakarta, Indonesia",
         period: "Sep 2021 - Mar 2022",
         duration: "7 mos",
         details: [
-            "Verified and migrated accounting data into the Nectico Accounting System.",
-            "Coordinated with Customer Success for data verification and correction.",
-            "Performed traceback on cash data and compared ledgers for accuracy.",
-            "Implemented PSAK ETAP standards into the software system for client reporting."
+            "Migrated and verified client accounting data into the Nectico System.",
+            "Performed financial traceback and implemented PSAK ETAP standards.",
+            "Conducted application training for cooperative members."
         ]
     },
     {
         jobtitle: "Technical Operations",
         company: "Nectico",
-        location: "Bandung, West Java, Indonesia",
+        location: "Bandung, West Java",
         period: "Jun 2021 - Sep 2021",
         duration: "4 mos",
         details: [
-            "Reviewed client business flows for mapping into the Nectico Accounting System.",
-            "Created comprehensive Financial Statements (Journals, General Ledgers, and Trial Balances).",
-            "Resolved unbalanced financial statements and ensured data integrity.",
-            "Presented end-to-end financial reports to client Top Management (General Managers)."
+            "Mapped client business flows into the Accounting System.",
+            "Created Financial Statements including Journals and General Ledgers.",
+            "Presented end-to-end financial reports to Top Management."
         ]
     }
 ];
