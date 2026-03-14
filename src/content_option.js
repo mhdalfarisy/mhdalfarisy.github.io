@@ -21,15 +21,71 @@ const dataabout = {
     aboutme: "As a Data Analyst Engineer, my daily focus involves monitoring and developing high-impact Power BI dashboards. I am highly proficient in DAX and have extensive experience in building data warehouses from diverse sources, including managing ETL processes to Google BigQuery using Python.",
 };
 
-const worktimeline = [{
-        jobtitle: "Data Analyst Engineer",
-        where: "Current Company",
-        date: "2024",
+// const worktimeline = [{
+//         jobtitle: "Data Analyst Engineer",
+//         where: "Current Company",
+//         date: "2024",
+//     },
+//     {
+//         jobtitle: "Data Analyst Specialist",
+//         where: "Project",
+//         date: "2023",
+//     }
+// ];
+
+const worktimeline = [
+    {
+        jobtitle: "Data Analyst",
+        company: "PT Merdeka Copper Gold Tbk",
+        location: "South Jakarta, Indonesia",
+        period: "Dec 2022 - Present",
+        duration: "3 yrs 4 mos",
+        details: [
+            "Design, develop, and maintain interactive Power BI dashboards and reports.",
+            "Collect, cleanse, and validate data from various sources including Data Warehouses and SQL databases.",
+            "Build and optimize data models using DAX calculations for complex analytical needs.",
+            "Collaborate with IT and Programmer teams to optimize ETL and data retrieval processes.",
+            "Automate reporting solutions to minimize manual processes and ensure data security."
+        ]
     },
     {
-        jobtitle: "Data Analyst Specialist",
-        where: "Project",
-        date: "2023",
+        jobtitle: "Data Analyst and Visualization (Seasonal)",
+        company: "PT Adhi Commuter Properti Tbk",
+        location: "Bogor, West Java, Indonesia",
+        period: "Aug 2022 - Oct 2022",
+        duration: "3 mos",
+        details: [
+            "Cleaned and analyzed consumer and sales databases for marketing insights.",
+            "Developed supervised and unsupervised Machine Learning models for business categorization.",
+            "Analyzed digital marketing campaign data (Google Ads, FB Ads, Instagram Ads).",
+            "Visualized insights using Tableau and presented findings to Project Directors and Managers."
+        ]
+    },
+    {
+        jobtitle: "Operations and Accounting",
+        company: "Nectico (In Collaboration with TaniHub)",
+        location: "South Jakarta, Indonesia",
+        period: "Sep 2021 - Mar 2022",
+        duration: "7 mos",
+        details: [
+            "Verified and migrated accounting data into the Nectico Accounting System.",
+            "Coordinated with Customer Success for data verification and correction.",
+            "Performed traceback on cash data and compared ledgers for accuracy.",
+            "Implemented PSAK ETAP standards into the software system for client reporting."
+        ]
+    },
+    {
+        jobtitle: "Technical Operations",
+        company: "Nectico",
+        location: "Bandung, West Java, Indonesia",
+        period: "Jun 2021 - Sep 2021",
+        duration: "4 mos",
+        details: [
+            "Reviewed client business flows for mapping into the Nectico Accounting System.",
+            "Created comprehensive Financial Statements (Journals, General Ledgers, and Trial Balances).",
+            "Resolved unbalanced financial statements and ensured data integrity.",
+            "Presented end-to-end financial reports to client Top Management (General Managers)."
+        ]
     }
 ];
 
