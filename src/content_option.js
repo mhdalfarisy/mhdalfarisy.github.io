@@ -12,7 +12,8 @@ const introdata = {
         third: "Data Warehouse Specialist",
     },
     description: "Expert in DAX Power BI and Data Warehouse development. I specialize in building end-to-end ETL pipelines to Google BigQuery and developing robust data solutions using Python.",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d", 
+    // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d", 
+    your_img_url: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images/poto_profil.jpeg",    
 };
 
 const dataabout = {
