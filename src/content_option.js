@@ -112,7 +112,7 @@ const dataportfolio = [
         link: "https://github.com/mhdalfarisy/sertifikasi_bnsp_data_science", // Sesuaikan dengan link repo projectnya
     },
     {
-        img: "https://p.statically.io/gh/mhdalfarisy/ETL-Trans-Jakarta/main/Diagram_ETL_Image.png",
+        img: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images//Diagram_ETL_Image.png",
         description: "End-to-End ETL Pipeline for TransJakarta Transport Data.",
         link: "https://github.com/mhdalfarisy/ETL-Trans-Jakarta",
     },
