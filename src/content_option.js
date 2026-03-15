@@ -85,17 +85,18 @@ const skills = [
     },
 ];
 
-const services = [{
-        title: "Power BI Development",
-        description: "End-to-end dashboard creation, expert-level DAX optimization, and continuous monitoring for business insights.",
+const services = [
+    {
+        title: "Power BI Development & Analytics",
+        description: "Delivering end-to-end dashboard solutions with expert-level DAX optimization to transform complex datasets into actionable business intelligence.",
     },
     {
-        title: "Data Warehousing & ETL",
-        description: "Designing and maintaining data warehouses, including seamless data integration and ETL pipelines to Google BigQuery.",
+        title: "Data Warehousing & ETL Architecture",
+        description: "Designing scalable data warehouse architectures and implementing robust ETL pipelines for seamless data integration into Google BigQuery.",
     },
     {
-        title: "Data Engineering with Python",
-        description: "Utilizing Python for automated data processing, development of data infrastructures, and handling diverse data sources.",
+        title: "Power Automation",
+        description: "Architecting automated data workflows by integrating Python and Power Automate to streamline complex data processes, ensuring high data integrity and operational efficiency.",
     },
 ];
 
