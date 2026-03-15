@@ -117,7 +117,7 @@ const dataportfolio = [
         link: "https://github.com/mhdalfarisy/ETL-Trans-Jakarta",
     },
     {
-        img: "https://raw.githubusercontent.com/mhdalfarisy/Final-Project-Data-Engineer/main/assets/Batch%20Processing%20Flow.jpg",
+        img: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images//Batch_Processing_Flow_airflow.png",
         description: "Automated ETL Pipeline for Batch Processing to Google BigQuery.",
         link: "https://github.com/mhdalfarisy/Final-Project-Data-Engineer",
     },    
