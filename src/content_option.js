@@ -113,12 +113,12 @@ const dataportfolio = [
     },
     {
         img: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images//Diagram_ETL_Image.png",
-        description: "End-to-End ETL Pipeline for TransJakarta Transport Data.",
+        description: "End-to-End ETL Pipeline for TransJakarta Transport Data",
         link: "https://github.com/mhdalfarisy/ETL-Trans-Jakarta",
     },
     {
         img: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images//Batch_Processing_Flow_airflow.png",
-        description: "Automated ETL Pipeline for Batch Processing to Google BigQuery.",
+        description: "End-to-End ETL Pipeline for Monitoring Factory Workers’ Daily Performance & Attrition",
         link: "https://github.com/mhdalfarisy/Final-Project-Data-Engineer",
     },    
 ];
