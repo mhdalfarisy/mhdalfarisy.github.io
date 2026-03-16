@@ -15,9 +15,47 @@ const introdata = {
     your_img_url: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images/poto_profil.jpeg",    
 };
 
+// const dataabout = {
+//     title: "A bit about myself",
+//     aboutme: "As a Data Analyst Engineer, my daily focus involves monitoring and developing high-impact Power BI dashboards. I am highly proficient in DAX and have extensive experience in building data warehouses from diverse sources, including managing ETL processes to Google BigQuery using Python.",
+// };
+
 const dataabout = {
     title: "A bit about myself",
     aboutme: "As a Data Analyst Engineer, my daily focus involves monitoring and developing high-impact Power BI dashboards. I am highly proficient in DAX and have extensive experience in building data warehouses from diverse sources, including managing ETL processes to Google BigQuery using Python.",
+        
+    education: [
+        {
+            institution: "Universitas Pamulang",
+            degree: "Master of Science in Informatics Engineering",
+            thesis : "On Development",
+            year: "2025 - Present",
+        },
+        {
+            institution: "Universitas Pasundan",
+            degree: "Bachelor of Accounting", 
+            year: "2016 - 2021",
+        },
+    ],
+    training: [
+        {
+            title: "Training Name",
+            organizer: "Penyelenggara",
+            year: "2023",
+        },
+    ],
+    achievements: [
+        {
+            title: "Certified BNSP Data Science",
+            Note_Desc : "Certified Data Science Associate",            
+            year: "2026 - 2029",
+        },
+        {
+            title: "Publish Journal PROKASDADIK : Prosiding Kecerdasan, Sains Data dan Pendidikan Masa Depan",
+            Note_Desc : "Vol. 4, No 1, (2026) E-ISSN: 3063-5845",
+            year: "2026",
+        },        
+    ],
 };
 
 const worktimeline = [

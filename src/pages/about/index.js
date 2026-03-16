@@ -25,6 +25,8 @@ export const About = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
+        
+        {/* Profile Summary */}
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">{dataabout.title}</h3>
@@ -35,9 +37,81 @@ export const About = () => {
             </div>
           </Col>
         </Row>
+
+        {/* --- EDUCATION --- */}
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Education</h3>
+          </Col>
+          <Col lg="7">
+            <table className="table caption-top">
+              <tbody>
+                {dataabout.education && dataabout.education.map((data, i) => {
+                  return (
+                    <tr key={i}>
+                      <th scope="row" style={{ width: "40%" }}>{data.degree}</th>
+                      <td>{data.institution}</td>
+                      <td className="text-end">{data.year}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </Col>
+        </Row>
+
+        {/* {/* --- TRAINING & ACHIEVEMENTS/} */}
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Training</h3>
+          </Col>
+          <Col lg="7">
+            {dataabout.training && dataabout.training.map((data, i) => (
+              <div className="service_ py-3" key={i}>
+                <h5 className="service__title">{data.title}</h5>
+                <p className="service_desc">Organized by {data.organizer} — {data.Note_Desc}</p>
+                <p className="service_desc">Organized by {data.organizer} — {data.year}</p>
+              </div>
+            ))}
+            {/* <hr className="t_border my-3" />
+            {dataabout.achievements && dataabout.achievements.map((data, i) => (
+              <div className="service_ py-2" key={i}>
+                <h5 className="service__title">🏅 {data.title}</h5>
+                <p className="service_desc">{data.Note_Desc}</p>                
+                <p className="service_desc">{data.year}</p>
+              </div>
+            ))} */}
+          </Col>
+        </Row>
+
+        {/* {/* --- TRAINING & ACHIEVEMENTS/} */}
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Achievements</h3>
+          </Col>
+          <Col lg="7">
+            {/* {dataabout.training && dataabout.training.map((data, i) => (
+              <div className="service_ py-3" key={i}>
+                <h5 className="service__title">{data.title}</h5>
+                <p className="service_desc">Organized by {data.organizer} — {data.Note_Desc}</p>
+                <p className="service_desc">Organized by {data.organizer} — {data.year}</p>
+              </div>
+            ))} */}
+            <hr className="t_border my-3" />
+            {dataabout.achievements && dataabout.achievements.map((data, i) => (
+              <div className="service_ py-2" key={i}>
+                <h5 className="service__title">🏅 {data.title}</h5>
+                <p className="service_desc">{data.Note_Desc}</p>                
+                <p className="service_desc">{data.year}</p>
+              </div>
+            ))}
+          </Col>
+        </Row>        
+
+        {/* Work Timeline */}
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timeline</h3>
+            <h3 className="color_sec py-4">Work Experience</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -51,8 +125,6 @@ export const About = () => {
                       <td style={{ verticalAlign: "top", paddingTop: "15px" }}>
                         <div style={{ fontWeight: "bold", fontSize: "1.1rem" }}>{data.where || data.company}</div>
                         <div style={{ fontSize: "0.85rem", color: "#888", marginBottom: "10px" }}>{data.date || data.period}</div>
-                        
-                        {/* Menampilkan Deskripsi/Responsibilities */}
                         {data.description && (
                           <ul style={{ paddingLeft: "20px", marginTop: "10px", listStyleType: "disc" }}>
                             {data.description.map((item, index) => (
@@ -70,9 +142,11 @@ export const About = () => {
             </table>
           </Col>
         </Row>
+
+        {/* Skills */}
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Skills</h3>
+            <h3 className="color_sec py-4">Technical Skills</h3>
           </Col>
           <Col lg="7" className="d-flex flex-wrap">
             {skills.map((data, i) => {
@@ -92,6 +166,8 @@ export const About = () => {
             })}
           </Col>
         </Row>
+
+        {/* Services */}
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Services</h3>
