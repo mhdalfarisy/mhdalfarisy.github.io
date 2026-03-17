@@ -1,5 +1,13 @@
-.sec_sp {
+/* .sec_sp {
     margin-bottom: calc(3rem + 5.128vw)
+} */
+
+.sec_sp {
+    margin-bottom: 40px;
+}
+
+.edu-section {
+    margin-top: -10px;
 }
 
 .table td,
@@ -97,4 +105,32 @@
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
     }
+}
+
+/* .edu-row:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+} */
+
+.edu-row {
+    transition: all 0.3s ease;
+}
+
+.edu-row:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.training-card {
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.service_desc {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
