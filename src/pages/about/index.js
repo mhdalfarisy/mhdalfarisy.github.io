@@ -60,7 +60,7 @@ export const About = () => {
           </Col>
         </Row>
 
-        {/* {/* --- TRAINING & ACHIEVEMENTS/} */}
+        {/* {/* --- TRAINING/} */}
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Training</h3>
@@ -84,7 +84,7 @@ export const About = () => {
           </Col>
         </Row>
 
-        {/* {/* --- TRAINING & ACHIEVEMENTS/} */}
+        {/* {/* --- ACHIEVEMENTS/} */}
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Achievements</h3>
