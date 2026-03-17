@@ -91,10 +91,24 @@ const worktimeline = [
         where: "PT Merdeka Copper Gold Tbk",
         date: "Dec 2022 - Present",
         description: [
-            "Design, develop, and maintain interactive Power BI dashboards using DAX.",
-            "Optimize ETL processes and data warehouse integration (BigQuery).",
-            "Collaborate with IT and Programmer teams for data transformation.",
-            "Automate reporting solutions to increase operational efficiency."
+        "- Main Responsibilities:",
+        
+        "Design, develop, and maintain interactive, scalable, and user-friendly dashboards and reports using Power BI based on business requirements.",
+        "Collect, cleanse, transform, and validate data from multiple sources (data warehouse, internal databases, APIs, Excel files, etc.) to ensure data accuracy, consistency, and reliability.",
+        "Develop and optimize data models, including defining relationships, creating calculated columns/measures using DAX, and implementing best practices for performance.",
+        "Design and implement data marts and database schemas to support efficient reporting and analytical processes.",
+        "Improve dashboard performance and optimize queries to ensure fast data retrieval and smooth user experience.",
+        "Create Power BI mockups and prototypes to align visualization design with stakeholder expectations before development.",
+        "Automate reporting processes using scheduling tools (e.g., Task Scheduler) and Power Automate for report distribution to stakeholders via email.",
+        "Collaborate with IT teams, business users, and cross-functional stakeholders to gather requirements and deliver effective data visualization solutions.",
+        "Ensure data governance, security, and confidentiality in compliance with company policies and best practices.",
+        "Perform regular maintenance, monitoring, and enhancements to ensure dashboard accuracy, relevance, and performance.",
+
+        "- Supporting Responsibilities:",
+        "Support data engineering processes by assisting in the development and maintenance of ETL/ELT pipelines from data sources to the data warehouse.",
+        "Collaborate with the Programmer Team to optimize data extraction, transformation, and loading processes.",
+        "Implement scheduling and orchestration of data pipelines to ensure timely and reliable data availability.",
+        "Assist in troubleshooting data issues, ensuring data integrity, and improving overall data quality."
         ]
     },
     {
@@ -102,9 +116,13 @@ const worktimeline = [
         where: "PT Adhi Commuter Properti Tbk",
         date: "Aug 2022 - Oct 2022",
         description: [
-            "Built Machine Learning models for consumer sales database categorization.",
-            "Visualized marketing insights using Tableau for Project Directors.",
-            "Analyzed digital campaign performance (Google, FB, and IG Ads)."
+            "Collect, process, and validate data from the Marketing Admin team as a foundation for analysis.",
+            "Collaborate with Marketing Managers, Project Managers, and Project Directors to identify business problems and analytical requirements.",
+            "Perform data cleaning, preprocessing, and analysis on consumer and sales databases.",
+            "Develop machine learning models, both supervised and unsupervised, to generate insights and predictive outcomes that support business strategies.",
+            "Coordinate with the digital marketing team to analyze the performance of online campaigns (Google Ads, Facebook Ads, and Instagram Ads).",
+            "Create data visualizations using Tableau to present insights in a clear, informative, and actionable manner for stakeholders.",
+            "Prepare reports and deliver presentations of analytical findings and strategic recommendations to support data-driven decision-making."
         ]
     },
     {
