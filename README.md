@@ -3,11 +3,6 @@
 # Muhammad Al Farisy — Personal Portfolio
 
 Personal portfolio website built with React and deployed via GitHub Pages.
-
-[![Live Preview](https://img.shields.io/badge/🌐_Live_Preview-mhdalfarisy.github.io-blue?style=for-the-badge)](https://mhdalfarisy.github.io/)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/mhdalfarisy/mhdalfarisy.github.io)
-[![MIT License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
-
 </div>
 
 ---
@@ -15,6 +10,8 @@ Personal portfolio website built with React and deployed via GitHub Pages.
 ## 📸 Preview
 
 [![Portfolio Preview](src/assets/images/react%20portfolio%20gif.gif)](https://mhdalfarisy.github.io/)
+
+https://mhdalfarisy.github.io/#
 
 ---
 
