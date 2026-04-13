@@ -1,112 +1,131 @@
-/* Kontainer Utama: Menggunakan Grid untuk 3 Kolom */
+/* List Layout - satu card per baris */
 .po_items_ho {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom sejajar */
-    gap: 2rem; /* Jarak antar kotak */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
 
-/* Item Portfolio */
+/* Horizontal Card */
 .po_item {
-    display: block;
-    width: 100%;
-    position: relative;
+    display: flex;
+    flex-direction: row;
     background: var(--secondary-color);
-    padding: 10px;
-    border: 1px solid var(--secondary-color);
-    transition: 0.4s ease;
-    min-height: 250px;
-    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 200px;
+}
+
+.po_item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Image - kiri, lebar tetap */
+.po_img_wrap {
+    flex: 0 0 320px;
     overflow: hidden;
 }
 
-/* Pengaturan Gambar agar Seragam */
-.po_item img {
+.po_img_wrap img {
     width: 100%;
-    height: 220px; 
-    object-fit: cover; 
+    height: 100%;
+    object-fit: cover;
     object-position: center;
-    border-radius: 6px;
-    transition: 0.4s ease;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
-/* Konten Overlay (Muncul saat Hover) */
-.po_item .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.8);
-    background: var(--overlay-color);
-    z-index: 1;
+.po_item:hover .po_img_wrap img {
+    transform: scale(1.04);
+}
+
+/* Card Body - kanan */
+.po_card_body {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    height: 0;
-    width: 0;
-    transition: 0.3s ease-in-out;
-    opacity: 0;
-    border-radius: 8px;
+    padding: 24px 28px;
+    gap: 12px;
+    flex: 1;
 }
 
-/* Judul/Deskripsi di dalam Overlay */
-.po_item .content p {
-    font-size: 1rem;
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 0 15px;
-    margin-bottom: 15px;
+/* Title */
+.po_title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0;
+    color: #1a1a1a;
+    line-height: 1.4;
 }
 
-/* Link/Tombol View Project */
-.po_item .content a {
-    background: var(--bg-color);
-    color: var(--text-color);
-    border: solid 1px var(--text-color);
-    padding: 6px 15px;
-    text-align: center;
-    font-size: 0.9rem;
+/* Divider */
+.po_divider {
+    margin: 0;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Description */
+.po_desc {
+    font-size: 0.85rem;
+    color: #444444;
+    line-height: 1.7;
+    margin: 0;
+    flex: 1;
+}
+
+/* Tech Stack Badges */
+.po_tech_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.po_badge {
+    font-size: 0.72rem;
+    padding: 3px 12px;
+    border-radius: 20px;
+    border: 1px solid #888888;
+    color: #333333;
+    background: transparent;
+    white-space: nowrap;
+}
+
+/* View Project Button */
+.po_btn {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 0.85rem;
     text-decoration: none;
-    transition: 0.3s;
+    border: 1px solid #1a1a1a;
+    color: #1a1a1a;
+    background: transparent;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+    align-self: flex-start;
+    margin-top: 4px;
 }
 
-.po_item .content a:hover {
-    background: var(--text-color);
-    color: var(--bg-color);
+.po_btn:hover {
+    background: #1a1a1a;
+    color: #ffffff;
 }
 
-/* EFEK SAAT HOVER */
-.po_item:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px);
-}
-
-.po_item:hover .content {
-    height: calc(100% - 20px);
-    width: calc(100% - 20px);
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.po_item:hover img {
-    filter: blur(2px); /* Memberi efek blur sedikit pada gambar saat hover */
-}
-
-/* RESPONSIF: Tablet (2 Kolom) & HP (1 Kolom) */
-@media (max-width: 992px) {
-    .po_items_ho {
-        grid-template-columns: repeat(2, 1fr);
+/* Responsive: tablet ke bawah jadi vertikal */
+@media (max-width: 768px) {
+    .po_item {
+        flex-direction: column;
     }
-}
 
-@media (max-width: 576px) {
-    .po_items_ho {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    .po_img_wrap {
+        flex: unset;
+        width: 100%;
+        height: 220px;
     }
-    
-    .po_item img {
-        height: 200px;
+
+    .po_card_body {
+        padding: 18px;
     }
 }
