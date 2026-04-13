@@ -25,7 +25,13 @@ export const Portfolio = () => {
               <div key={i} className="po_item">
                 <img src={data.img} alt="" />
                 <div className="content">
+                  {data.title && <h6>{data.title}</h6>}
                   <p>{data.description}</p>
+                  {data.tech_stack && (
+                    <p className="po_tech">
+                      {data.tech_stack.join(" · ")}
+                    </p>
+                  )}
                   <a href={data.link}>view project</a>
                 </div>
               </div>

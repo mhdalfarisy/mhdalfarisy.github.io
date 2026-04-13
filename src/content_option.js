@@ -1,3 +1,5 @@
+import chatbotImg from "./assets/images/Flow_Chatbot_Telegram_Claude.png";
+
 const logotext = "Hi! i'm Faris";
 const meta = {
     title: "Muhammad Al-farisy",
@@ -191,19 +193,32 @@ const services = [
 const dataportfolio = [
     {
         img: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images/california_predict_house.png",
-        description: "Project Sertifikasi BNSP Data Science",
-        link: "https://github.com/mhdalfarisy/sertifikasi_bnsp_data_science", // Sesuaikan dengan link repo projectnya
+        title: "Project Sertifikasi BNSP Data Science: California Housing Price Prediction",
+        description: "Developed a machine learning model to predict California housing prices with advanced regression techniques. The project implements data cleaning, exploratory data analysis, and feature engineering, comparing multiple algorithms to achieve optimal prediction accuracy.",
+        tech_stack: ["Python", "Pandas", "NumPy", "Scikit-Learn", "XGBoost", "Matplotlib", "Seaborn"],
+        link: "https://github.com/mhdalfarisy/sertifikasi_bnsp_data_science",
     },
     {
-        img: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images//Diagram_ETL_Image.png",
-        description: "End-to-End ETL Pipeline for TransJakarta Transport Data",
+        img: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images/Diagram_ETL_Image.png",
+        title: "End-to-End ETL Pipeline for TransJakarta Transport Data",
+        description: "Built an automated data pipeline that extracts, transforms, and loads TransJakarta transaction datasets. The system performs data cleaning, normalization, and time-series preparation before loading into Google BigQuery, with automated logging and monitoring capabilities.",
+        tech_stack: ["Python", "Pandas", "Google BigQuery", "CSV Processing", "Data Validation", "Logging"],
         link: "https://github.com/mhdalfarisy/ETL-Trans-Jakarta",
     },
     {
-        img: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images//Batch_Processing_Flow_airflow.png",
-        description: "End-to-End ETL Pipeline for Monitoring Factory Workers’ Daily Performance & Attrition",
+        img: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images/Batch_Processing_Flow_airflow.png",
+        title: "End-to-End ETL Pipeline for Monitoring Factory Workers’ Daily Performance & Attrition",
+        description: "Designed and implemented an enterprise-grade ETL pipeline using Apache Airflow for batch processing. The system monitors and tracks factory workers’ daily performance metrics while analyzing attrition patterns, enabling data-driven HR insights and workforce optimization.",
+        tech_stack: ["Python", "Apache Airflow", "Pandas", "SQL", "Data Warehousing", "Batch Processing", "DAG Orchestration"],
         link: "https://github.com/mhdalfarisy/Final-Project-Data-Engineer",
-    },    
+    },
+    {
+        img: chatbotImg,
+        title: "AI Chatbot for Personal Finance Tracking",
+        description: "Developed a conversational AI chatbot that helps users record and manage daily financial transactions through natural language interactions. The chatbot provides an intuitive and interactive solution for personal finance tracking with persistent data storage.",
+        tech_stack: ["Python", "Claude API", "Telegram Bot API", "PostgreSQL", "NLP"],
+        link: "https://github.com/mhdalfarisy/chatbot-catat-duitku",
+    },
 ];
 
 const contactConfig = {
